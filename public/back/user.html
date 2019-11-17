@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
+    <title>一级分类</title>
     <link rel="stylesheet" href="../manage/lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="lib/bootstrap-validator/css/bootstrapValidator.css">
     <link rel="stylesheet" href="../manage/lib/nprogress/nprogress.css">
     <link href="css/commin.css" rel="stylesheet">
-
 </head>
 <body>
 <!--右边栏-->
 <div class="Le-left">
     <div class="Title">
-        <a href="#">黑马99期</a>
+        <a href="index.html">黑马99期</a>
     </div>
     <div class="user">
         <img src="img/default.png">
@@ -22,7 +21,7 @@
     <div class="nav">
         <ul>
             <li>
-                <a href="user.html">
+                <a href="index.html" class="active">
                     <i class="glyphicon glyphicon-user"></i>
                     <span>用户管理</span>
                 </a>
@@ -32,13 +31,13 @@
                     <i class="glyphicon glyphicon-list"></i>
                     <span >分类管理</span>
                 </a>
-                <div class="child" style="display: none">
+                <div class="child" style="display: none;">
                     <a href="frist.html">一级分类</a>
                     <a href="second.html">二级分类</a>
                 </div>
             </li>
             <li>
-                <a>
+                <a href="product.html">
                     <i class="glyphicon glyphicon-tags"></i>
                     <span>商品管理</span>
                 </a>
@@ -48,24 +47,40 @@
 </div>
 <!--顶部-->
 <div class="Le-top">
-<div class="Lt_icon">
-    <a href="#" class="Cai pull-left"><i class="glyphicon glyphicon-align-justify"></i></a>
-    <a href="#" class="Out pull-right"><i class="glyphicon glyphicon-log-out"></i></a>
-</div>
-<!--    路径导航-->
+    <div class="Lt_icon">
+        <a href="#" class="Cai pull-left"><i class="glyphicon glyphicon-align-justify"></i></a>
+        <a href="#" class="Out pull-right"><i class="glyphicon glyphicon-log-out"></i></a>
+    </div>
+    <!--    路径导航-->
     <div class="container-fluid">
         <ol class="breadcrumb">
             <li><a href="user.html">管理系统</a></li>
-            <li class="active">首页</li>
+            <li class="active">用户管理</li>
         </ol>
-        <!--图表-->
-        <div class="TuB">
-            <div class="echarts_1 pull-left"></div>
-            <div class="echarts_2 pull-right"></div>
-        </div>
     </div>
-
-
+<!--    tab栏-->
+    <div class="tab">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th width="10%">序号</th>
+                    <th width="20%">用户名</th>
+                    <th width="30%">手机号</th>
+                    <th width="20%">状态</th>
+                    <th width="20%">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>wuhao</td>
+                    <td>15426778888</td>
+                    <td>haha</td>
+                    <td><button class="btn btn-danger">禁用</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <!--退出模态框-->
@@ -88,13 +103,10 @@
 </div>
 
 
-
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="../manage/lib/bootstrap/js/bootstrap.js"></script>
 <script src="lib/bootstrap-validator/js/bootstrapValidator.js"></script>
 <script src="../manage/lib/nprogress/nprogress.js"></script>
-<script src="lib/echarts/echarts.min.js"></script>
 <script src="js/common.js"></script>
-<script src="js/index.js"></script>
 </body>
 </html>

@@ -105,8 +105,8 @@ a:active {
   margin-right: 5px;
 }
 .lt_aside .nav a.current {
-  background-color: #1D1F21;
-  border-left: 3px solid #006699;
+    background-color: #1D1F21;
+    border-left: 3px solid #006699;
 }
 .lt_aside .nav .child a {
   padding-left: 60px;
@@ -127,7 +127,6 @@ a:active {
 .lt_main.hidemenu {
   padding-left: 0px;
 }
-
 .lt_topbar {
   height: 50px;
   width: 100%;

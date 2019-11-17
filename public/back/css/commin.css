@@ -1,6 +1,17 @@
 .body_bg{
     background-color: #222D32;
 }
+a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.red{
+    color: #A94442;
+}
 .panel .panel-title{
     height: 40px;
     line-height: 40px;
@@ -9,4 +20,111 @@
 }
 .mg-150{
     margin-top: 150px;
+}
+
+/*右边栏*/
+.Le-left{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100%;
+    background-color: #222D32;
+    z-index: 999;
+    transition: all 1.5s;
+}
+.le-left-l{
+    left: -180px;
+}
+.Le-left .Title{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #2aabd2;
+    text-align: center;
+}
+.Le-left .Title a{
+    font-size: 22px;
+    color: #fff;
+}
+.user{
+    height: 180px;
+    padding-top: 30px;
+}
+.user img{
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.user p{
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.nav .child a{
+    padding-left: 60px;
+}
+.nav ul a{
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    padding-left: 40px;
+    color: #fff;
+    border: 3px solid transparent;
+}
+.nav ul a.active{
+    background-color: #1D1F21;
+    border-left: 3px solid #006699;
+}
+/*顶部*/
+.Le-top{
+    width: 100%;
+    padding-left: 180px;
+    padding-top: 50px;
+    transition: all 1.5s;
+}
+.Le-top_l{
+    padding-left: 0;
+}
+.Lt_icon{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #3C8DBC;
+    padding-left: 180px;
+    transition: all 1.5s;
+}
+.Lt_icon_l{
+    padding-left: 0;
+}
+.Le-top .Lt_icon a{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 17px;
+    color: #fff;
+}
+.breadcrumb{
+    margin-top: 20px;
+}
+/*图表*/
+.TuB .echarts_1{
+    width: 48%;
+    height: 400px;
+}
+.TuB .echarts_2{
+    width: 48%;
+    height: 400px;
+ }
+/*表格*/
+.tab .table.table-bordered th,
+.tab .table.table-bordered td{
+    text-align: center;
+    vertical-align: middle;
 }
